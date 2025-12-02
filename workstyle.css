@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #E0FFFF;
+}
+
+.Logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #98f0ff;
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    width: calc(100% - 80px);
+    background-color: #98f0ff;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.navbar a {
+    color: rgb(31, 23, 80);
+    text-decoration: none;
+    font-size: 31px;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background: rgb(31, 23, 80);
+    color: #98f0ff;
+}
+
+.header {
+  padding-top: 100px;
+}
+
+.title {
+  color: pink;
+  font-size: 30px;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* the grid centers items, adds 20px gap, and wraps to a new line */
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*adds a white border on the list of works done for each island*/
+.work {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/*styles the titles*/
+h3 {
+  color: #3498db;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+/*centers the text under the cleanups class*/
+.cleanups {
+  margin: auto;
+  text-align: center;
+}
+
+/*styles all elements with these ids, floats them to the left, and adds a border to them */
+#cavite, #davao, #iloilo {
+  text-align: center;
+  margin-left: 10%;
+  width: 35%;
+  float: left;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/*styles all elements with these ids, floats them to the right, and adds a border to them */
+#baguio, #butuan, #cebu {
+  text-align: center;
+  margin-right: 10%;
+  width: 35%;
+  float: right;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/*styles the p elements under the elements with these ids*/
+#cavite p, #baguio p, #davao p, #butuan p, #iloilo p, #cebu p {
+  text-align: justify;
+  text-indent: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*makes the page scroll down to the elements with certain ids */
+:target {
+    border-style: solid;
+    border-color:rgb(185, 152, 224);
+    border-radius: 2px;
+}
+
+/*divides each island to avoid incorrect stacking of elements*/
+.divider {
+  padding-top: 300px;
+}
+
+/*removes the bullet points*/
+ul {
+  list-style: none;
+}
+
+/*centers the texts of the lists*/
+li {
+  padding-right: 35px;
+}
+
+/*styles the footer*/
+footer {
+  display: flex;
+  padding-left: 10%;
+  padding-top: 2%;
+  background-color: white;
+}
+
+/*aligns the text in the footer*/
+.footer-item {
+  text-align: center;
+}
+
+/*sets properties for the 2 sprites*/
+.sprite, .sprite2 {
+  display: inline-block;   /* makes span respect width/height */
+  width: 72px;
+  height: 64px;
+  background-image: url('../images/socmed.jpg');
+  background-repeat: no-repeat;
+}
+
+/*inserts sprite 1*/
+.sprite {
+  background-position: -112px -24px;
+}
+
+/*inserts sprite 2*/
+.sprite2 {
+  background-position: -200px -24px;
+}
+
+/* styles the footer links */
+.footer-item a {
+  text-decoration: none;
+  color: rgb(31, 23, 80);
+  font-size: 18px;
+}
+
+/*changes text color when links are hovered over*/
+.footer-item a:hover {
+  color: pink;
+}
+
+/*clears floated elements and adds spacing */
+.clear {
+  clear: both;
+  padding-top: 15px;
+}

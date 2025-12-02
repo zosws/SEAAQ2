@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #E0FFFF;
+}
+
+.Logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #98f0ff;
+    z-index: 1000;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    width: calc(100% - 80px);
+    background-color: #98f0ff;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.navbar a {
+    color: rgb(31, 23, 80);
+    text-decoration: none;
+    font-size: 31px;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background: rgb(31, 23, 80);
+    color: #98f0ff;
+}
+
+.background-section {
+  padding: 60px 10%;
+}
+
+/*styles for the page title and section text */
+.title {
+  padding-top: 100px;
+  color: pink;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.section-text {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/*layouts the donation form */
+.form {
+  display: grid;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/*allows for inputs and also styles the form */
+.donate-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/*styles the submit button */
+.donate {
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/*changes donate button color when hovered over */
+.donate:hover {
+  background-color: #2980b9;
+}

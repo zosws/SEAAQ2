@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.Logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #98f0ff;
+    z-index: 1000;
+}
+
+/*creates a navbar that is fixed to stay on the top even when scrolling down*/
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 80px;
+    width: calc(100% - 80px);
+    background-color: #98f0ff;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.navbar a {
+    color: rgb(31, 23, 80);
+    text-decoration: none;
+    font-size: 31px;
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+/* changes navbar background color and text color if you hover over a specific part */
+.navbar a:hover {
+    background: rgb(31, 23, 80);
+    color: #98f0ff;
+}
+
+.SEAA {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    float: left;
+}
+
+/*puts a background image in the header and fixes it to fit the space*/
+.banner {
+    background-image: url(../images/Sea.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+
+.Head {
+    padding-top: 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: aqua;
+    background-color: rgba(228, 221, 221, 0.8);
+}
+
+/*background color of the webpage*/
+.background-section {
+    background-color: #E0FFFF;
+    padding: 60px 10%;
+}
+
+.heading-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.image-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.Animal {
+    width: 250px;
+    height: auto;
+}
+
+#para1 {
+    font-size: 40px;
+    text-align: justify;
+    margin-right: 60px;
+}
+
+#para2 {
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+#para3 {
+    color: pink;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*increases image size if you were to hover over it*/
+.hover-box {
+    background-color: #3498db;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.hover-box1 {
+    background-color: #3498db;
+    margin: 50px auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: auto;
+    width: 30%;
+}
+
+.hover-box:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hover-box1:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#para4 {
+    color: pink;
+    font-size: 30px; 
+}
